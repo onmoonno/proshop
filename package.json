@@ -5,7 +5,7 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": " node backend/server.js"
+    "start": " node --watch backend/server.js"
   },
   "author": "Yunxia Zhang",
   "license": "MIT",
