@@ -6,15 +6,14 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-
-// Added into the boiler plate, replaced by the customed bootstrap theme
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/styles/bootstrap.custom.css";
 import "./assets/styles/index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
+import { Provider } from "react-redux";
+import store from "./store.js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,8 +26,9 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> use RouterProvider to pass in the router as a props*/}
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 
