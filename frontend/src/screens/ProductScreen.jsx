@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Row, Col, ListGroup, Image, Card, Button } from "react-bootstrap";
-// import products from "../products";
+// import products from "../products"; use backend to fetch data
 import Rating from "../components/Rating";
 import axios from "axios";
 
