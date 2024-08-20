@@ -4,6 +4,9 @@ dotenv.config();
 import cors from "cors";
 
 import products from "./data/products.js";
+import connectDB from "./config/db.js";
+
+connectDB();
 
 const port = process.env.PORT;
 const app = express();
