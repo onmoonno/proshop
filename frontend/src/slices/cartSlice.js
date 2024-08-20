@@ -32,7 +32,7 @@ const cartSlice = createSlice({
       );
 
       // Calculate tax price (15% tax)
-      state.taxPrice = addDecimals(Number(state.itemsPrice * 15));
+      state.taxPrice = addDecimals(Number(state.itemsPrice * 0.15));
 
       // Calculate shipping price, if order is over $100 then free, else $10 shipping
       state.shippingPrice = addDecimals(
