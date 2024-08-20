@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
-// import products from "../products";
+// import products from "../products"; use backend to fetch data
 import Product from "../components/Product";
 import axios from "axios";
 
