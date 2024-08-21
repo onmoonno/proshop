@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 import Rating from "../components/Rating";
 import { useGetProductDetailsQuery } from "../slices/productsApiSlice.js";
-import Loader from "../components/loader.jsx";
+import Loader from "../components/Loader.jsx";
 import Message from "../components/Message.jsx";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
